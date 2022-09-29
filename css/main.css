@@ -519,7 +519,7 @@ form input[type=submit]:hover {
 
   .hero-section .child {
     padding: 100px;
-  }  
+  }
 
   .hero-section p {
     font-size: 20px;
@@ -530,7 +530,7 @@ form input[type=submit]:hover {
     border-bottom-left-radius: 19rem;
   }
 
-  nav { 
+  nav {
     padding: 0 190px;
   }
 
@@ -548,7 +548,7 @@ form input[type=submit]:hover {
   }
 
   .destop-menu ul {
-   display: flex;
+    display: flex;
   }
 
   .destop-menu li {
