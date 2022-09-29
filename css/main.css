@@ -404,7 +404,7 @@ form input[type=submit]:hover {
   border-radius: 10px;
 }
 
-.mother-accordion li:first-child { border-bottom:0px; }
+.mother-accordion li:first-child { border-bottom: 0; }
 
 ::-webkit-scrollbar {
   width: 10px;
@@ -531,7 +531,8 @@ form input[type=submit]:hover {
     background-image: url("../image/desktop-header-bg.svg");
     background-size: 1398px 722px;
     background-repeat: no-repeat;
-    background-position: 110px 0px;
+    background-position: 110px 0;
+    border-bottom-left-radius: 19rem;
   }
 
   .hero-section {
@@ -556,10 +557,6 @@ form input[type=submit]:hover {
   .hero-section p {
     font-size: 20px;
     width: 65%;
-  }
-
-  .section1 {
-    border-bottom-left-radius: 19rem;
   }
 
   nav {
