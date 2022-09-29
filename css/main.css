@@ -412,11 +412,12 @@ form input[type=submit]:hover {
   nav .destop-menu {
     display: none;
   }
-  
+
   .dash {
     display: none;
   }
 }
+
 @media (min-width: 768px) {
   .my-work {
     flex-direction: row;
@@ -431,16 +432,20 @@ form input[type=submit]:hover {
   .my-work:nth-child(2n){
     flex-direction: row-reverse
   }
+
   .tech {
     margin-top: 30px;
     margin-bottom: 50px;
   }
+
   .my-work p {
     margin-top: 15px;
   }
+
   .position-container ul {
     justify-content: flex-start;
   }
+
   .position-container li {
     margin-right: 50px;
   }
@@ -452,7 +457,7 @@ form input[type=submit]:hover {
     gap: 50px;
     align-items: center;
   }
-  
+
   .about,
   .accordion {
     width: 100%;
@@ -468,7 +473,7 @@ form input[type=submit]:hover {
     margin-right: 10px;
   }
 
-  .language-name{
+  .language-name {
     flex-direction: column;
   }
 
@@ -494,7 +499,7 @@ form input[type=submit]:hover {
     width: 90%;
     border-radius: 0;
   }
-  
+
   form textarea {
     width: 90%;
     border-radius: 0;
@@ -502,7 +507,6 @@ form input[type=submit]:hover {
 
   .hero-section {
     background-image: url("../image/desktop-header-bg.svg");
-    background-size: cover;
     display: flex;
     background-size: 1080px 720px;
     background-repeat: no-repeat;
