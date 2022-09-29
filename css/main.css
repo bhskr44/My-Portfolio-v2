@@ -72,6 +72,12 @@ nav > .button {
   color: #344563;
 }
 
+.social h2 {
+  color: #7f8cff;
+  font-size: 16px;
+  font-weight: normal;
+}
+
 .icons > ul {
   display: flex;
   flex-direction: row;
@@ -214,7 +220,7 @@ nav > .button {
 
 .accordion-item {
   display: block;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   border-bottom: 1px solid #505f79;
 }
 
@@ -224,6 +230,7 @@ nav > .button {
 }
 
 .mother-accordion h2 {
+  font-size: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -256,9 +263,22 @@ nav > .button {
   padding-right: 20px;
   border-color: #6070ff;
   margin-top: 20px;
+  color: #6070ff;
   background-color: white;
   border-radius: 8px;
   display: flex;
+}
+
+.get-resume > button:hover {
+  color: white;
+  background-color: #6070ff;
+  border-color: #6070ff;
+}
+
+.get-resume > button:active {
+  color: white;
+  background-color: #2230d2;
+  border-color: #2230d2;
 }
 
 .section3 {
@@ -384,6 +404,8 @@ form input[type=submit]:hover {
   border-radius: 10px;
 }
 
+.mother-accordion li:first-child { border-bottom:0px; }
+
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
@@ -505,11 +527,16 @@ form input[type=submit]:hover {
     border-radius: 0;
   }
 
-  .hero-section {
+  .section1 {
     background-image: url("../image/desktop-header-bg.svg");
-    display: flex;
-    background-size: 1080px 720px;
+    background-size: 1398px 722px;
     background-repeat: no-repeat;
+    background-position: 110px 0px;
+  }
+
+  .hero-section {
+    background: none;
+    display: flex;
     flex-direction: column;
     justify-content: space-around;
     border-bottom-left-radius: 10rem;
@@ -523,6 +550,7 @@ form input[type=submit]:hover {
 
   .hero-section .child {
     padding: 100px;
+    padding-top: 190px;
   }
 
   .hero-section p {
