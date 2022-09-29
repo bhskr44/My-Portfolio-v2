@@ -429,8 +429,8 @@ form input[type=submit]:hover {
     width: 100%;
   }
 
-  .my-work:nth-child(2n){
-    flex-direction: row-reverse
+  .my-work:nth-child(2n) {
+    flex-direction: row-reverse;
   }
 
   .tech {
