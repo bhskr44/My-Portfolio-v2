@@ -14,3 +14,11 @@ function toggleMenu() {
     document.getElementById("hm-menuIcon").style.color = "white";
   }
 }
+function navigate(loc) {
+  let menuButton = document.getElementById("destop-menu");
+  menuButton.style.display = "none";
+  document.getElementById("navId").style.background = "white";
+    document.getElementById("hm-menuIcon").className = "fa fa-bars fa-2x";
+    document.getElementById("hm-menuIcon").style.color = "#6070ff";
+  window.href=loc;
+}

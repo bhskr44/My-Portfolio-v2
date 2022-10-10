@@ -21,6 +21,10 @@ nav {
   background-color: white;
 }
 
+.destop-menu a {
+  text-decoration: none;
+}
+
 .logo {
   width: 80px;
   padding: 10px;
@@ -444,6 +448,9 @@ form input[type=submit]:hover {
     display: none;
   }
 
+  .destop-menu a {
+    color: white;
+  }
 
 
   .destop-menu ul {
@@ -454,7 +461,7 @@ form input[type=submit]:hover {
     font-size: 32px;
     font-weight: 500;
     margin-top: 10px;
-    color: white;
+    
   }
 
 }
