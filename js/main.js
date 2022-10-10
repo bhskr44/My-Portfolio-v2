@@ -1,52 +1,37 @@
-//
-// onClick
+const menuButton = document.getElementById('destop-menu');
+const mainElement = document.getElementById('section1');
+const navId = document.getElementById('navId');
+const menuIcon = document.getElementById('hm-menuIcon');
+const logoText = document.getElementById('logo-text');
+const mobileMenu = document.getElementById('mobile-menu');
+// const mobileMenu = document.getElementById('mobile-menu');
+
 function toggleMenu() {
-  let menuButton = document.getElementById("destop-menu");
-  let mainElement = document.getElementById("section1");
-
-  if (menuButton.style.display == "block") {
-    menuButton.style.display = "none";
-
-    document.getElementById("navId").classList.remove("add-bg-to-nav");
-
-    document.getElementById("hm-menuIcon").className = "fa fa-bars fa-2x";
-    document.getElementById("hm-menuIcon").style.color = "#6070ffc2";
-    document.getElementById("section1").classList.remove("add-blur");
-    document.getElementById("logo-text").classList.remove("add-blur");
-    enableScroll();
+  if (menuButton.style.display === 'block') {
+    menuButton.style.display = 'none';
+    navId.classList.remove('add-bg-to-nav');
+    menuIcon.className = 'fa fa-bars fa-2x';
+    menuIcon.style.color = '#6070ffc2';
+    mainElement.classList.remove('add-blur');
+    logoText.classList.remove('add-blur');
   } else {
-    menuButton.style.display = "block";
-    document.getElementById("hm-menuIcon").className = "fa fa-close fa-2x";
-    document.getElementById("hm-menuIcon").style.color = "white";
-    document.getElementById("navId").classList.add("add-bg-to-nav");
-    document.getElementById("section1").classList.add("add-blur");
-    document.getElementById("logo-text").classList.add("add-blur");
-    stopScroll();
-    // mainElement.style.filter = "blur(2px)";
+    menuButton.style.display = 'block';
+    menuIcon.className = 'fa fa-close fa-2x';
+    menuIcon.style.color = 'white';
+    navId.classList.add('add-bg-to-nav');
+    mainElement.classList.add('add-blur');
+    logoText.classList.add('add-blur');
   }
 }
-
+/* eslint-disable */
 function navigate(loc) {
-  let menuButton = document.getElementById("destop-menu");
-  menuButton.style.display = "none";
-  // document.getElementById("navId").style.background = "white";
-  document.getElementById("navId").classList.remove("add-bg-to-nav");
-  document.getElementById("section1").classList.remove("add-blur");
-  document.getElementById("logo-text").classList.remove("add-blur");
-  document.getElementById("hm-menuIcon").className = "fa fa-bars fa-2x";
-  document.getElementById("hm-menuIcon").style.color = "#6070ffc2";
+  menuButton.style.display = 'none';
+  navId.classList.remove('add-bg-to-nav');
+  mainElement.classList.remove('add-blur');
+  logoText.classList.remove('add-blur');
+  menuIcon.className = 'fa fa-bars fa-2x';
+  menuIcon.style.color = '#6070ffc2';
   window.href = loc;
 }
-
-function stopScroll() {
-  scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  (scrollLeft = window.pageXOffset || document.documentElement.scrollLeft),
-    // if any scroll is attempted, set this to the previous value
-    (window.onscroll = function () {
-      window.scrollTo(scrollLeft, scrollTop);
-    });
-}
-
-function enableScroll() {
-  window.onscroll = function () {};
-}
+/* eslint-enable */
+mobileMenu.addEventListener('click', toggleMenu());
