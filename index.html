@@ -27,23 +27,18 @@
       <header>
         <nav id="navId">
           <div class="logo">
-            <h1 class="logo-text">My Logo</h1>
+            <h1 id="logo-text">My Logo</h1>
           </div>
-          <div
-            class="button"
-            id="mobile-menu"
-            class="mobile-menu-class"
-            onClick="toggleMenu();"
-          >
-            <i id="hm-menuIcon" class="fa fa-bars fa-2x"></i>
+          <div class="button" id="mobile-menu" class="mobile-menu-class">
+            <img id="hm-menuIcon" src="image/hamburger.svg"  alt="hambuger menu"></img>
           </div>
           <div class="destop-menu" id="destop-menu">
             <ul>
-              <li onclick="navigate('#portfolio')">
+              <li class="clicked-item">
                 <a href="#portfolio"> Portoflio</a>
               </li>
-              <li onclick="navigate('#about')"><a href="#about">About</a></li>
-              <li onclick="navigate('#contact')">
+              <li class="clicked-item"><a href="#about">About</a></li>
+              <li>
                 <a href="#contact">Contact</a>
               </li>
             </ul>
