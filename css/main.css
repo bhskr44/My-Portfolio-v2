@@ -14,6 +14,13 @@ main {
   overflow-x: hidden;
 }
 
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
 nav {
   display: flex;
   flex-direction: row;
@@ -342,6 +349,11 @@ nav > .button {
   margin: 0;
 }
 
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
 .contact-header > .description > .c-descrp {
   color: white;
   text-align: center;
@@ -437,13 +449,26 @@ form input[type=submit]:hover {
 
   nav .destop-menu {
     display: none;
-    position: absolute;
     margin-top: 77px;
-    width: 100%;
-    height: 100%;
-    background-color: #6070ffd2;
+    position:fixed;
+    right:0;
+    top:0;
+    bottom:0;
+    left:0;
+    background-color:#6070ffc2;
+    z-index:2;
   }
 
+  .add-bg-to-nav {
+    background-color:#6070ffc2;
+  }
+
+  .add-blur {
+    filter: blur(2px);
+    background-color: transparent;
+  }
+
+  
   .dash {
     display: none;
   }
@@ -460,6 +485,12 @@ form input[type=submit]:hover {
     font-size: 32px;
     font-weight: 500;
     margin-top: 10px;
+    mix-blend-mode: normal;
+  }
+
+  .donotdisplay {
+    /* color: #5364f9; */
+    font-size: 0;
   }
 }
 
@@ -520,6 +551,10 @@ form input[type=submit]:hover {
 
   .language-name {
     flex-direction: column;
+  }
+
+  .hide {
+    display: none;
   }
 
   .language-name span {
