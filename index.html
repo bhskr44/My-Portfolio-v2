@@ -25,14 +25,19 @@
   <body>
     <main>
       <header>
-        <nav>
+        <nav id="navId">
           <div class="logo">
             <h1>My Logo</h1>
           </div>
-          <div class="button">
-            <i class="fa fa-bars fa-2x"></i>
+          <div
+            class="button"
+            id="mobile-menu"
+            class="mobile-menu-class"
+            onClick="toggleMenu();"
+          >
+            <i id="hm-menuIcon" class="fa fa-bars fa-2x"></i>
           </div>
-          <div class="destop-menu">
+          <div class="destop-menu" id="destop-menu">
             <ul>
               <li>Portoflio</li>
               <li>About</li>
@@ -363,5 +368,7 @@
         </div>
       </section>
     </main>
+
+    <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
