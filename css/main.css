@@ -452,7 +452,6 @@ form input[type=submit]:hover {
     color: white;
   }
 
-
   .destop-menu ul {
     list-style-type: none;
   }
@@ -461,9 +460,7 @@ form input[type=submit]:hover {
     font-size: 32px;
     font-weight: 500;
     margin-top: 10px;
-    
   }
-
 }
 
 @media (min-width: 768px) {
