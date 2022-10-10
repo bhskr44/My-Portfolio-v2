@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 * {
   font-family: 'Poppins', sans-serif;
 }
@@ -14,6 +16,13 @@ main {
   overflow-x: hidden;
 }
 
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
 nav {
   display: flex;
   flex-direction: row;
@@ -21,21 +30,24 @@ nav {
   background-color: white;
 }
 
+.destop-menu a {
+  text-decoration: none;
+}
+
 .logo {
   width: 80px;
-  height: 80px;
   padding: 10px;
 }
 
-.logo > h1 {
-  color: #6070ff;
+.logo h1 {
+  color: #5364f9;
   font-size: 18px;
   font-weight: bold;
 }
 
 nav > .button {
-  padding: 15px;
-  color: #6070ff;
+  padding: 25px;
+  color: #5364f9;
 }
 
 .section1 {
@@ -68,12 +80,12 @@ nav > .button {
   margin: auto;
   font-size: 16px;
   text-align: left;
-  font-weight: regular;
+  font-weight: 500;
   color: #344563;
 }
 
 .social h2 {
-  color: #7f8cff;
+  color: #5163ff;
   font-size: 16px;
   font-weight: normal;
 }
@@ -90,7 +102,7 @@ nav > .button {
 .my-work a {
   text-decoration: none;
   color: #396df2;
-  border: 1px solid #6070ff;
+  border: 1px solid #5364f9;
   border-radius: 8px;
   width: 120px;
   padding: 12px;
@@ -111,15 +123,15 @@ nav > .button {
   background-color: #396df2;
 }
 
-.icons > ul > li > a:hover { color: #7f8cff; }
+.icons > ul > li > a:hover { color: #5163ff; }
 
 .accordation {
   padding-right: 10px;
 }
 
 .social > p {
-  color: #7f8cff;
-  font-weight: medium;
+  color: #5163ff;
+  font-weight: 500;
   font-size: 16px;
 }
 
@@ -177,7 +189,7 @@ nav > .button {
 .position-container li {
   margin-right: 12px;
   font-size: 13px;
-  color: #7a869a;
+  color: #6b7587;
   font-weight: bold;
 }
 
@@ -188,8 +200,8 @@ nav > .button {
 
 .tech li {
   display: inline-block;
-  color: #6070ff;
-  background: #ebebff;
+  color: #5364f9;
+  background: #fefeff;
   border-radius: 8px;
   padding: 4px 12px;
   margin-right: 10px;
@@ -261,9 +273,9 @@ nav > .button {
   padding-bottom: 10px;
   padding-left: 20px;
   padding-right: 20px;
-  border-color: #6070ff;
+  border-color: #5364f9;
   margin-top: 20px;
-  color: #6070ff;
+  color: #5364f9;
   background-color: white;
   border-radius: 8px;
   display: flex;
@@ -271,8 +283,8 @@ nav > .button {
 
 .get-resume > button:hover {
   color: white;
-  background-color: #6070ff;
-  border-color: #6070ff;
+  background-color: #5364f9;
+  border-color: #5364f9;
 }
 
 .get-resume > button:active {
@@ -296,13 +308,13 @@ nav > .button {
 
 .section3 > .about > h1 {
   font-size: 40px;
-  font-weight: extrabold;
+  font-weight: 700;
   color: #172b4d;
   margin: 0;
 }
 
 .section3 > .about > p {
-  padding: 20;
+  padding: 20px;
 }
 
 .section4 {
@@ -312,7 +324,7 @@ nav > .button {
 }
 
 .contact-us {
-  background-color: #6070ff;
+  background-color: #5364f9;
   background-repeat: no-repeat;
   border-top-left-radius: 7rem;
   display: flex;
@@ -337,6 +349,11 @@ nav > .button {
   color: white;
   text-align: center;
   margin: 0;
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
 }
 
 .contact-header > .description > .c-descrp {
@@ -383,7 +400,8 @@ form input[type=submit] {
   border-radius: 8px;
   padding: 0 10px;
   border: none;
-  color: #6070ff;
+  background-color: white;
+  color: #5364f9;
   margin-bottom: 20px;
 }
 
@@ -394,7 +412,7 @@ form input[type=submit]:hover {
   padding: 0 10px;
   border: 1px solid white;
   color: white;
-  background: #6070ff;
+  background: #5364f9;
   margin-bottom: 20px;
 }
 
@@ -418,7 +436,7 @@ form input[type=submit]:hover {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #6070ff;
+  background: #5364f9;
   border-radius: 10px;
 }
 
@@ -433,10 +451,47 @@ form input[type=submit]:hover {
 
   nav .destop-menu {
     display: none;
+    margin-top: 77px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #6070ffc2;
+    z-index: 2;
+  }
+
+  .add-bg-to-nav {
+    background-color: #6070ffc2;
+  }
+
+  .add-blur {
+    filter: blur(2px);
+    background-color: transparent;
   }
 
   .dash {
     display: none;
+  }
+
+  .destop-menu a {
+    color: white;
+  }
+
+  .destop-menu ul {
+    list-style-type: none;
+  }
+
+  .destop-menu li {
+    font-size: 32px;
+    font-weight: 500;
+    margin-top: 10px;
+    mix-blend-mode: normal;
+  }
+
+  .donotdisplay {
+    /* color: #5364f9; */
+    font-size: 0;
   }
 }
 
@@ -499,8 +554,12 @@ form input[type=submit]:hover {
     flex-direction: column;
   }
 
+  .hide {
+    display: none;
+  }
+
   .language-name span {
-    align-items: left;
+    align-items: start;
     width: 100%;
     padding: 10px;
   }
@@ -525,6 +584,11 @@ form input[type=submit]:hover {
   form textarea {
     width: 90%;
     border-radius: 0;
+  }
+
+  .donotdisplay {
+    /* color: #5364f9; */
+    font-size: 0;
   }
 
   .section1 {
