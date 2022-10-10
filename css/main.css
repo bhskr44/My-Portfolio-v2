@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 * {
   font-family: 'Poppins', sans-serif;
 }
@@ -78,7 +80,7 @@ nav > .button {
   margin: auto;
   font-size: 16px;
   text-align: left;
-  font-weight: regular;
+  font-weight: 500;
   color: #344563;
 }
 
@@ -129,7 +131,7 @@ nav > .button {
 
 .social > p {
   color: #5163ff;
-  font-weight: medium;
+  font-weight: 500;
   font-size: 16px;
 }
 
@@ -306,13 +308,13 @@ nav > .button {
 
 .section3 > .about > h1 {
   font-size: 40px;
-  font-weight: extrabold;
+  font-weight: 700;
   color: #172b4d;
   margin: 0;
 }
 
 .section3 > .about > p {
-  padding: 20;
+  padding: 20px;
 }
 
 .section4 {
@@ -450,17 +452,17 @@ form input[type=submit]:hover {
   nav .destop-menu {
     display: none;
     margin-top: 77px;
-    position:fixed;
-    right:0;
-    top:0;
-    bottom:0;
-    left:0;
-    background-color:#6070ffc2;
-    z-index:2;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #6070ffc2;
+    z-index: 2;
   }
 
   .add-bg-to-nav {
-    background-color:#6070ffc2;
+    background-color: #6070ffc2;
   }
 
   .add-blur {
@@ -468,7 +470,6 @@ form input[type=submit]:hover {
     background-color: transparent;
   }
 
-  
   .dash {
     display: none;
   }
@@ -558,7 +559,7 @@ form input[type=submit]:hover {
   }
 
   .language-name span {
-    align-items: left;
+    align-items: start;
     width: 100%;
     padding: 10px;
   }
