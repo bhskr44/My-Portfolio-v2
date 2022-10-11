@@ -50,8 +50,9 @@ const work4 = {
 };
 
 const myWorksArray = [work1, work2, work3, work4];
+
 document.addEventListener('DOMContentLoaded', () => {
-  for (let i = 0; i < myWorksArray.length; i = +1) {
+  for (let i = 0; i < myWorksArray.length; i += 1) {
     const createMainDiv = document.createElement('div');
     createMainDiv.className += 'my-work';
     workSection.appendChild(createMainDiv);
@@ -97,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
     techUL.className += 'tech';
     myWorkBody.appendChild(techUL);
 
-    for (let j = 0; j < myWorksArray[i].technologies.length; j = +1) {
+    for (let j = 0; j < myWorksArray[i].technologies.length; j += 1) {
       const techLI = document.createElement('li');
       techLI.innerHTML = myWorksArray[i].technologies[j];
       techUL.appendChild(techLI);
@@ -177,7 +178,7 @@ document.addEventListener('DOMContentLoaded', () => {
       cardTags.className += 'card-tags';
       cardBodyChildsAsscories.appendChild(cardTags);
 
-      for (let j = 0; j < myWorksArray[i].technologies.length; j = +1) {
+      for (let j = 0; j < myWorksArray[i].technologies.length; j += 1) {
         const tagLI = document.createElement('li');
         tagLI.innerHTML = myWorksArray[i].technologies[j];
         cardTags.appendChild(tagLI);
