@@ -134,10 +134,6 @@ document.addEventListener('DOMContentLoaded', () => {
         modalClass.classList.add('hide');
       });
 
-      // modalClassRemove.addEventListener('click', () => {
-      //   modalClass.classList.add('hide');
-      // });
-
       let miniContainer = document.createElement('div');
       miniContainer.className += 'mini-ps-container';
       cardHeader.appendChild(miniContainer);
@@ -165,13 +161,21 @@ document.addEventListener('DOMContentLoaded', () => {
       bodyImage.src = myWorksArray[i].featuredImage;
       cardBody.appendChild(bodyImage);
 
+      let cardBodyChilds = document.createElement('div');
+      cardBodyChilds.className += 'childs';
+      cardBody.appendChild(cardBodyChilds);
+
       let bodydecr = document.createElement('p');
       bodydecr.innerHTML = myWorksArray[i].description;
-      cardBody.appendChild(bodydecr);
+      cardBodyChilds.appendChild(bodydecr);
+
+      let cardBodyChildsAsscories = document.createElement('div');
+      cardBodyChildsAsscories.className += 'asscories';
+      cardBodyChilds.appendChild(cardBodyChildsAsscories);
 
       let cardTags = document.createElement('ul');
       cardTags.className += 'card-tags';
-      cardBody.appendChild(cardTags);
+      cardBodyChildsAsscories.appendChild(cardTags);
 
       for (let j = 0; j < myWorksArray[i].technologies.length; j++) {
         let tagLI = document.createElement('li');
@@ -181,7 +185,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       let displayCentered = document.createElement('div');
       displayCentered.className += 'display-centered';
-      cardBody.appendChild(displayCentered);
+      cardBodyChildsAsscories.appendChild(displayCentered);
 
       let seeLive = document.createElement('a');
       seeLive.innerHTML = 'See Live';
