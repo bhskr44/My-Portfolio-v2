@@ -7,10 +7,10 @@ const logoText = document.getElementById('logo-text');
 const mobileNavigation = document.querySelectorAll('.clicked-item');
 
 const modalClass = document.getElementById('modalClass');
-const modalClassRemove = document.querySelector('.close-button');
+// const modalClassRemove = document.querySelector('.close-button');
 
 //  name, description, featured image, technologies, link to live version, link to source.
-let work1 = {
+const work1 = {
   name: 'Tonic',
   description:
     'A daily selection of privately personalized reads; no accounts or sign-ups required.',
@@ -20,7 +20,7 @@ let work1 = {
   linkToSource: 'github.com/bhskr44',
 };
 
-let work2 = {
+const work2 = {
   name: 'Multi-Post Stories',
   description:
     'A daily selection of privately personalized reads; no accounts or sign-ups required.',
@@ -30,7 +30,7 @@ let work2 = {
   linkToSource: 'github.com/bhskr44',
 };
 
-let work3 = {
+const work3 = {
   name: 'Tonic',
   description:
     'A daily selection of privately personalized reads; no accounts or sign-ups required.',
@@ -39,7 +39,7 @@ let work3 = {
   linkToLiveVersion: 'liveversion.com',
   linkToSource: 'github.com/bhskr44',
 };
-let work4 = {
+const work4 = {
   name: 'Multi-Post Stories',
   description:
     'A daily selection of privately personalized reads; no accounts or sign-ups required.',
@@ -49,82 +49,82 @@ let work4 = {
   linkToSource: 'github.com/bhskr44',
 };
 
-var myWorksArray = [work1, work2, work3, work4];
+const myWorksArray = [work1, work2, work3, work4];
 document.addEventListener('DOMContentLoaded', () => {
-  for (let i = 0; i < myWorksArray.length; i++) {
-    let createMainDiv = document.createElement('div');
+  for (let i = 0; i < myWorksArray.length; i = +1) {
+    const createMainDiv = document.createElement('div');
     createMainDiv.className += 'my-work';
     workSection.appendChild(createMainDiv);
 
-    let portfolioImage = document.createElement('img');
+    const portfolioImage = document.createElement('img');
     portfolioImage.src = myWorksArray[i].featuredImage;
     createMainDiv.appendChild(portfolioImage);
 
-    let myWorkBody = document.createElement('div');
+    const myWorkBody = document.createElement('div');
     myWorkBody.className += 'my-work-body';
     createMainDiv.appendChild(myWorkBody);
 
-    let workTitle = document.createElement('h2');
+    const workTitle = document.createElement('h2');
     workTitle.innerHTML = myWorksArray[i].name;
     myWorkBody.appendChild(workTitle);
 
-    let positionContainer = document.createElement('div');
+    const positionContainer = document.createElement('div');
     positionContainer.className += 'position-container';
     myWorkBody.appendChild(positionContainer);
 
-    let canopy = document.createElement('span');
+    const canopy = document.createElement('span');
     canopy.innerHTML = 'Canopy';
     positionContainer.appendChild(canopy);
 
-    let pcUL = document.createElement('ul');
+    const pcUL = document.createElement('ul');
     positionContainer.appendChild(pcUL);
 
-    let developedMarked = document.createElement('li');
+    const developedMarked = document.createElement('li');
     developedMarked.className += 'developed marked';
     developedMarked.innerHTML = 'Backend development';
     pcUL.appendChild(developedMarked);
 
-    let yearMarked = document.createElement('li');
+    const yearMarked = document.createElement('li');
     yearMarked.className += 'year marked';
     yearMarked.innerHTML = '2018';
     pcUL.appendChild(yearMarked);
 
-    let descrpt = document.createElement('p');
+    const descrpt = document.createElement('p');
     descrpt.innerHTML = myWorksArray[i].description;
     myWorkBody.appendChild(descrpt);
 
-    let techUL = document.createElement('ul');
+    const techUL = document.createElement('ul');
     techUL.className += 'tech';
     myWorkBody.appendChild(techUL);
 
-    for (let j = 0; j < myWorksArray[i].technologies.length; j++) {
-      let techLI = document.createElement('li');
+    for (let j = 0; j < myWorksArray[i].technologies.length; j = +1) {
+      const techLI = document.createElement('li');
       techLI.innerHTML = myWorksArray[i].technologies[j];
       techUL.appendChild(techLI);
     }
 
-    let seeProject = document.createElement('a');
+    const seeProject = document.createElement('a');
     seeProject.innerHTML = 'See Project';
     myWorkBody.appendChild(seeProject);
 
     seeProject.addEventListener('click', () => {
-      let card = document.createElement('div');
+      const card = document.createElement('div');
       card.className += 'card';
       modalClass.appendChild(card);
 
-      let cardHeader = document.createElement('div');
+      const cardHeader = document.createElement('div');
       cardHeader.className += 'card-header';
       card.appendChild(cardHeader);
 
-      let cardHead = document.createElement('div');
+      const cardHead = document.createElement('div');
       cardHead.className += 'card-head';
       cardHeader.appendChild(cardHead);
 
-      let cardTitle = document.createElement('h4');
+      const cardTitle = document.createElement('h4');
       cardTitle.innerHTML = myWorksArray[i].name;
       cardHead.appendChild(cardTitle);
 
-      let cardImage = document.createElement('img');
+      const cardImage = document.createElement('img');
       cardImage.className += 'close-button';
       cardImage.src = 'image/cloasepopup.svg';
       cardImage.alt = 'Close Button';
@@ -134,77 +134,77 @@ document.addEventListener('DOMContentLoaded', () => {
         modalClass.classList.add('hide');
       });
 
-      let miniContainer = document.createElement('div');
+      const miniContainer = document.createElement('div');
       miniContainer.className += 'mini-ps-container';
       cardHeader.appendChild(miniContainer);
 
-      let mContainer = document.createElement('span');
+      const mContainer = document.createElement('span');
       mContainer.innerHTML = 'Canopy';
       miniContainer.appendChild(mContainer);
 
-      let mcUL = document.createElement('ul');
+      const mcUL = document.createElement('ul');
       miniContainer.appendChild(mcUL);
 
-      let mcUli = document.createElement('li');
+      const mcUli = document.createElement('li');
       mcUli.innerHTML = 'Backend Development';
       mcUL.appendChild(mcUli);
 
-      let mcUliYear = document.createElement('li');
+      const mcUliYear = document.createElement('li');
       mcUliYear.innerHTML = '2018';
       mcUL.appendChild(mcUliYear);
 
-      let cardBody = document.createElement('div');
+      const cardBody = document.createElement('div');
       cardBody.className += 'card-body';
       card.appendChild(cardBody);
 
-      let bodyImage = document.createElement('img');
+      const bodyImage = document.createElement('img');
       bodyImage.src = myWorksArray[i].featuredImage;
       cardBody.appendChild(bodyImage);
 
-      let cardBodyChilds = document.createElement('div');
+      const cardBodyChilds = document.createElement('div');
       cardBodyChilds.className += 'childs';
       cardBody.appendChild(cardBodyChilds);
 
-      let bodydecr = document.createElement('p');
+      const bodydecr = document.createElement('p');
       bodydecr.innerHTML = myWorksArray[i].description;
       cardBodyChilds.appendChild(bodydecr);
 
-      let cardBodyChildsAsscories = document.createElement('div');
+      const cardBodyChildsAsscories = document.createElement('div');
       cardBodyChildsAsscories.className += 'asscories';
       cardBodyChilds.appendChild(cardBodyChildsAsscories);
 
-      let cardTags = document.createElement('ul');
+      const cardTags = document.createElement('ul');
       cardTags.className += 'card-tags';
       cardBodyChildsAsscories.appendChild(cardTags);
 
-      for (let j = 0; j < myWorksArray[i].technologies.length; j++) {
-        let tagLI = document.createElement('li');
+      for (let j = 0; j < myWorksArray[i].technologies.length; j = +1) {
+        const tagLI = document.createElement('li');
         tagLI.innerHTML = myWorksArray[i].technologies[j];
         cardTags.appendChild(tagLI);
       }
 
-      let displayCentered = document.createElement('div');
+      const displayCentered = document.createElement('div');
       displayCentered.className += 'display-centered';
       cardBodyChildsAsscories.appendChild(displayCentered);
 
-      let seeLive = document.createElement('a');
+      const seeLive = document.createElement('a');
       seeLive.innerHTML = 'See Live';
       seeLive.className += 'btn-secondary';
       seeLive.href = myWorksArray[i].linkToLiveVersion;
       displayCentered.appendChild(seeLive);
 
-      let seeLiveImage = document.createElement('img');
+      const seeLiveImage = document.createElement('img');
       seeLiveImage.src = 'image/icons/live.svg';
       seeLiveImage.alt = 'See PRoject Live';
       seeLive.appendChild(seeLiveImage);
 
-      let seeSource = document.createElement('a');
+      const seeSource = document.createElement('a');
       seeSource.innerHTML = 'See Live';
       seeSource.className += 'btn-secondary';
       seeSource.href = myWorksArray[i].linkToSource;
       displayCentered.appendChild(seeSource);
 
-      let seeSourceImage = document.createElement('img');
+      const seeSourceImage = document.createElement('img');
       seeSourceImage.src = 'image/icons/github.svg';
       seeSourceImage.alt = 'See Source Code';
       seeSource.appendChild(seeSourceImage);
