@@ -469,6 +469,7 @@ form input[type=submit]:hover {
   background-color: #fff;
   box-shadow: 3px 3px #e1e1e1;
   padding: 0 3%;
+  overflow: scroll;
 }
 
 .card-header {
@@ -507,6 +508,7 @@ form input[type=submit]:hover {
 
 .card-body p {
   font-size: 15px;
+  padding: 5px;
 }
 
 .mini-ps-container span {
@@ -577,6 +579,7 @@ form input[type=submit]:hover {
   text-decoration: none;
   height: 27px;
   display: flex;
+  margin-right: 5px;
   justify-content: space-around;
 }
 
@@ -587,6 +590,14 @@ form input[type=submit]:hover {
 .display-centered {
   display: flex;
   justify-content: space-around;
+}
+
+
+@media(min-width:768px){
+  
+  .card-body .childs {
+    display: flex;
+  }
 }
 
 @media (max-width: 768px) {
