@@ -12,10 +12,10 @@ const work1 = {
   name: 'Tonic',
   description:
     'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-  featuredImage: 'image/works/SnapshootPortfolio.svg' ,
-  technologies: ['html', 'css', 'javascript','bootstrap'] ,
-  linkToLiveVersion: 'liveversion.com' ,
-  linkToSource: 'github.com/bhskr44' ,
+  featuredImage: 'image/works/SnapshootPortfolio.svg',
+  technologies: ['html', 'css', 'javascript', 'bootstrap'],
+  linkToLiveVersion: 'liveversion.com',
+  linkToSource: 'github.com/bhskr44',
 };
 
 const work2 = {
