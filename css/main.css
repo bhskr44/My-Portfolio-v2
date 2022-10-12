@@ -149,6 +149,7 @@ nav > .button {
   background-color: white;
   padding: 5%;
   margin-top: 80px;
+  padding-bottom: 35px;
 }
 
 .my-work img {
@@ -201,7 +202,7 @@ nav > .button {
 .tech li {
   display: inline-block;
   color: #5364f9;
-  background: #fefeff;
+  background: #6070ff38;
   border-radius: 8px;
   padding: 4px 12px;
   margin-right: 10px;
@@ -220,10 +221,6 @@ nav > .button {
   margin-bottom: 15px;
   padding: 10px;
   border-radius: 8px;
-}
-
-.tech li:nth-child(1) {
-  margin-left: -40px;
 }
 
 .accordion {
@@ -394,6 +391,10 @@ form textarea {
   margin-bottom: 20px;
 }
 
+.add-blur {
+  filter: blur(5px);
+}
+
 form input[type=submit] {
   height: 48px;
   width: 140px;
@@ -422,8 +423,6 @@ form input[type=submit]:hover {
   border-radius: 10px;
 }
 
-.mother-accordion li:first-child { border-bottom: 0; }
-
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
@@ -442,6 +441,199 @@ form input[type=submit]:hover {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #3847d4;
+}
+
+.hide {
+  display: none;
+}
+
+.modal-class {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #c1c7d0;
+  z-index: 200;
+}
+
+.card {
+  position: fixed;
+  top: 20px;
+  bottom: 20px;
+  left: 10%;
+  right: 10%;
+  z-index: 200;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 3px 3px #e1e1e1;
+  padding: 0 20px;
+  overflow: scroll;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-header h4 {
+  padding-top: 3%;
+  margin: 0;
+  font-size: 17px;
+}
+
+.mini-ps-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.card-head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-body {
+  height: 85%;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.card-body img {
+  width: 100%;
+}
+
+.mini-ps-container span {
+  color: #344563;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+.mini-ps-container ul {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+  padding-left: 20px;
+}
+
+.mini-ps-container li {
+  font-size: 10px;
+  width: 150px;
+  color: #6b7587;
+  font-weight: bold;
+}
+
+.popup-dash {
+  position: fixed;
+  border: 2px solid black;
+  width: 25%;
+  background-color: black;
+  height: 0;
+  bottom: 0;
+  border-radius: 5px;
+  margin-left: 35%;
+}
+
+.close-button {
+  padding-top: 15px;
+  padding-right: 15px;
+}
+
+.card-tags {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.card-tags li {
+  display: inline-block;
+  color: #5364f9;
+  background: #6070ff38;
+  border-radius: 8px;
+  padding: 4px 12px;
+  margin-right: 10px;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.btn-secondary {
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  background-color: white;
+  color: #6070ff;
+  width: 120px;
+  padding: 5px;
+  text-decoration: none;
+  height: 27px;
+  display: flex;
+  margin-right: 5px;
+  justify-content: space-around;
+}
+
+.card-body a img {
+  width: 20px;
+}
+
+.display-centered {
+  display: flex;
+  justify-content: space-around;
+}
+
+.tech li:nth-child(1) {
+  margin-left: -40px;
+}
+
+.mother-accordion li:first-child { border-bottom: 0; }
+
+@media (min-width: 768px) {
+  .childs p {
+    width: 65%;
+    padding-right: 30px;
+    padding-bottom: 5%;
+  }
+
+  .asscories {
+    padding: 15px;
+  }
+
+  .card-header h4 {
+    padding-top: 3%;
+    margin: 0;
+    font-size: 24px;
+  }
+
+  .card-body .childs {
+    display: flex;
+  }
+
+  .mini-ps-container span {
+    color: #344563;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+
+  .mini-ps-container ul {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+    padding-left: 40px;
+  }
+
+  .mini-ps-container li {
+    font-size: 15px;
+    width: 250px;
+    color: #6b7587;
+    font-weight: bold;
+  }
 }
 
 @media (max-width: 768px) {
