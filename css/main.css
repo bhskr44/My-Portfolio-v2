@@ -505,10 +505,6 @@ form input[type=submit]:hover {
   width: 100%;
 }
 
-
-
-
-
 .mini-ps-container span {
   color: #344563;
   font-weight: bold;
@@ -598,13 +594,11 @@ form input[type=submit]:hover {
 .mother-accordion li:first-child { border-bottom: 0; }
 
 @media (min-width: 768px) {
-
   .childs p {
     width: 65%;
     padding-right: 30px;
     padding-bottom: 5%;
   }
-
 
   .asscories {
     padding: 15px;
@@ -614,33 +608,33 @@ form input[type=submit]:hover {
     padding-top: 3%;
     margin: 0;
     font-size: 24px;
-}
+  }
 
   .card-body .childs {
     display: flex;
   }
 
-  
-.mini-ps-container span {
-  color: #344563;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 15px;
-}
 
-.mini-ps-container ul {
-  display: flex;
-  justify-content: flex-start;
-  padding: 0;
-  padding-left: 40px;
-}
+  .mini-ps-container span {
+    color: #344563;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 15px;
+  }
 
-.mini-ps-container li {
-  font-size: 15px;
-  width: 250px;
-  color: #6b7587;
-  font-weight: bold;
-}
+  .mini-ps-container ul {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+    padding-left: 40px;
+  }
+
+  .mini-ps-container li {
+    font-size: 15px;
+    width: 250px;
+    color: #6b7587;
+    font-weight: bold;
+  }
 }
 
 @media (max-width: 768px) {
@@ -692,7 +686,6 @@ form input[type=submit]:hover {
     /* color: #5364f9; */
     font-size: 0;
   }
-
 }
 
 @media (min-width: 768px) {
