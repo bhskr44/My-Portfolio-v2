@@ -149,6 +149,7 @@ nav > .button {
   background-color: white;
   padding: 5%;
   margin-top: 80px;
+  padding-bottom: 35px;
 }
 
 .my-work img {
@@ -390,6 +391,10 @@ form textarea {
   margin-bottom: 20px;
 }
 
+.add-blur {
+  filter: blur(5px);
+}
+
 form input[type=submit] {
   height: 48px;
   width: 140px;
@@ -456,13 +461,13 @@ form input[type=submit]:hover {
   position: fixed;
   top: 20px;
   bottom: 20px;
-  left: 20px;
-  right: 20px;
+  left: 10%;
+  right: 10%;
   z-index: 200;
   border-radius: 8px;
   background-color: #fff;
   box-shadow: 3px 3px #e1e1e1;
-  padding: 0 3%;
+  padding: 0 20px;
   overflow: scroll;
 }
 
@@ -499,6 +504,10 @@ form input[type=submit]:hover {
 .card-body img {
   width: 100%;
 }
+
+
+
+
 
 .mini-ps-container span {
   color: #344563;
@@ -543,7 +552,9 @@ form input[type=submit]:hover {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  margin-bottom: 20px;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .card-tags li {
@@ -587,9 +598,49 @@ form input[type=submit]:hover {
 .mother-accordion li:first-child { border-bottom: 0; }
 
 @media (min-width: 768px) {
+
+  .childs p {
+    width: 65%;
+    padding-right: 30px;
+    padding-bottom: 5%;
+  }
+
+
+  .asscories {
+    padding: 15px;
+  }
+
+  .card-header h4 {
+    padding-top: 3%;
+    margin: 0;
+    font-size: 24px;
+}
+
   .card-body .childs {
     display: flex;
   }
+
+  
+.mini-ps-container span {
+  color: #344563;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.mini-ps-container ul {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+  padding-left: 40px;
+}
+
+.mini-ps-container li {
+  font-size: 15px;
+  width: 250px;
+  color: #6b7587;
+  font-weight: bold;
+}
 }
 
 @media (max-width: 768px) {
@@ -641,6 +692,7 @@ form input[type=submit]:hover {
     /* color: #5364f9; */
     font-size: 0;
   }
+
 }
 
 @media (min-width: 768px) {
