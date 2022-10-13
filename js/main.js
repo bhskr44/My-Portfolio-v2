@@ -267,7 +267,7 @@ function saveTolocalStorage() {
 
 function compareandalert() {
   if (emailElement.value === emailElement.value.toLowerCase()) {
-    saveTolocalStorage();
+    // saveTolocalStorage();
     form.submit();
     form.reset();
   } else {
@@ -277,4 +277,11 @@ function compareandalert() {
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   compareandalert();
+});
+
+const formInputs = document.querySelectorAll('.form-data');
+formInputs.forEach((item) => {
+  item.addEventListener('keypress', () => {
+    saveTolocalStorage();
+  });
 });
