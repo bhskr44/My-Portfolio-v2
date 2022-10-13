@@ -9,6 +9,12 @@ const mobileNavigation = document.querySelectorAll('.clicked-item');
 const modalClass = document.getElementById('modalClass');
 const mainNode = document.getElementById('main');
 
+const form = document.getElementById('form');
+const emailElement = document.getElementById('email');
+const nameElement = document.getElementById('name');
+const messageElement = document.getElementById('message');
+const messageBox = document.getElementById('error-message');
+
 const myWorksArray = [
   {
     projectId: 1,
@@ -216,6 +222,8 @@ document.addEventListener('DOMContentLoaded', () => {
       mainNode.classList.add('add-blur');
     });
   }
+
+
 });
 
 mobileNavigation.forEach((item) => {
@@ -244,12 +252,19 @@ menuIcon.addEventListener('click', () => {
   }
 });
 
-const form = document.getElementById('form');
-const email = document.getElementById('email');
-const messageBox = document.getElementById('error-message');
+//Set Data To local Storage
+function saveTolocalStorage() {
+  let myFormSubmit = {
+    name: nameElement.value,
+    email: emailElement.value,
+    message: messageElement.value,
+  };
+  localStorage.setItem('myFormSubmit', JSON.stringify(myFormSubmit));
+}
 
 function compareandalert() {
   if (email.value === email.value.toLowerCase()) {
+    saveTolocalStorage();
     form.submit();
     form.reset();
   } else {
