@@ -248,7 +248,7 @@ const form = document.getElementById('form');
 const email = document.getElementById('email');
 const messageBox = document.getElementById('error-message');
 
-function compareandalert(){
+function compareandalert() {
   if (email.value === email.value.toLowerCase()) {
     form.submit();
     form.reset();
