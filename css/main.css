@@ -687,6 +687,11 @@ form input[type=submit]:hover {
   }
 }
 
+.error-message {
+  color: #ff7b6a;
+  margin-bottom: 5px;
+}
+
 @media (min-width: 768px) {
   .my-work {
     flex-direction: row;
