@@ -243,17 +243,3 @@ menuIcon.addEventListener('click', () => {
     logoText.classList.add('add-blur');
   }
 });
-
-const form = document.getElementById('form');
-const email = document.getElementById('email');
-const messageBox = document.getElementById('error-message');
-
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  if (email.value === email.value.toLowerCase()) {
-    form.submit();
-    form.reset();
-  } else {
-    messageBox.innerHTML = 'Your email should be in lowercase*';
-  }
-});
