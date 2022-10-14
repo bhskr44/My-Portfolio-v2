@@ -281,7 +281,7 @@ form.addEventListener('submit', (e) => {
 
 const formInputs = document.querySelectorAll('.form-data');
 formInputs.forEach((item) => {
-  item.addEventListener('keypress', () => {
+  item.addEventListener('input', () => {
     saveTolocalStorage();
   });
 });
