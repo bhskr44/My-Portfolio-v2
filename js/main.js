@@ -224,9 +224,11 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   // Get Data To local Storage
   const myFormData = JSON.parse(localStorage.getItem('myFormSubmit'));
+  if(myFormData != null){
   nameElement.value = myFormData.name;
   emailElement.value = myFormData.email;
   messageElement.value = myFormData.message;
+  }
 });
 
 mobileNavigation.forEach((item) => {
